@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Modak&family=Permanent+Marker&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+nav {
+  background-color: #292842;
+  color: #fff;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-around;
+
+  width: 70%;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+header {
+  margin: 0;
+  background-image: linear-gradient(62deg, #6e194e 0%, #2a0b9c 100%);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 75vh;
+  width: 100%;
+  position: relative;
+}
+
+header h1 {
+  font-size: 55.68px;
+  font-family: "Permanent Marker", cursive;
+  margin-top: 0px;
+}
+
+header p {
+  font-size: 30px;
+  margin: 0;
+  font-style: italic;
+  color: #a4161a;
+}
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+section h2 {
+  margin-bottom: 10px;
+  font-size: 4.2rem;
+  font-weight: 800;
+  text-align: center;
+  color: #a4161a;
+}
+section p {
+  margin-top: 5px;
+}
+.bg- {
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  color: #fff;
+  border-bottom: 0.2rem solid var(--main-red);
+}
+
+.social-ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.social-ul a {
+  margin: 0 10px;
+}
+
+footer {
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  color: #fff;
+  padding: 25px;
+  text-align: center;
+}
