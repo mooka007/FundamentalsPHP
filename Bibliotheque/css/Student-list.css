@@ -1,0 +1,80 @@
+.content-lyout-desc {
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  border-radius: 12px;
+  background: url(../imags/Shiny\ Overlay.svg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.content-lyout-desc {
+  height: 300px;
+  justify-content: left;
+  position: relative;
+}
+
+.left-content-lyout-desc {
+  width: 50%;
+}
+
+.content-lyout-desc h1 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.content-lyout-desc p {
+  line-height: 30px;
+  color: white;
+}
+
+.re-content-lyout-desc {
+  width: 480px;
+  height: 438px;
+  position: absolute;
+  bottom: -89px;
+  right: -43px;
+}
+
+.re-content-lyout-desc img {
+  width: 100%;
+  height: 100%;
+}
+
+.left-content-lyout-desc {
+  width: 76%;
+}
+
+.content-lyout-desc {
+  justify-content: left;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* .btn-sh {
+  padding: 10px 40px;
+  border: none;
+  outline: none;
+  background-color: rgb(28, 31, 37);
+  color: white;
+  margin: 20px 0 0 0;
+} */
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+}
+
+@media only screen and (max-width: 700px) {
+  .left-content-lyout-desc {
+    width: 76%;
+  }
+
+  .content-lyout-desc {
+    justify-content: left;
+  }
+}

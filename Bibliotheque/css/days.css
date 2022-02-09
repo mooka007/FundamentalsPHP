@@ -1,0 +1,161 @@
+body{
+    /* background-color: #ced4da; */
+    background-color: #e9ecef;
+}
+
+
+.week{
+    width:100%;
+    margin: 30px 0;
+}
+
+.title-week{
+    width: 300px;
+    height: 200px;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: rgb(180, 38, 236);
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.title-week h1{
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.title-week h2{
+    font-size: 40px;
+}
+
+
+.content-day{
+    width: 100%;
+    padding: 5px 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.haeder-content-day{
+    width: 100%;
+    padding: 10px 10px;
+}
+
+
+.haeder-content-day h3{
+    font-size: 20px;
+    padding: 0 0 10px ;
+    width: 300px;
+    border-bottom: 1px solid  rgb(0, 0, 0);
+}
+
+.haeder-content-day h3 span{
+    color: rgb(0, 0, 0);
+    margin-right: 10px ;
+}
+
+
+.body-content-day{
+    width: 100%;
+    height: auto;
+    padding:  10px;
+}
+
+
+.body-content-day p span{
+    margin-right: 10px;
+}
+
+.body-content-day p span i{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+
+.Monday{
+    background-color: rgb(180, 38, 236);
+    color: white;
+}
+.Tuesday{
+    
+    background-color: rgb(113, 240, 88);
+    color: white;
+}
+.Wednesday{
+     background-color: rgb(100, 176, 247); 
+     color: white;
+}
+
+
+.Thursday{
+    background-color: rgb(127, 107, 175); 
+    color: white;
+}
+
+
+.Friday{
+    background-color: #ee7373;
+    color: white;
+}
+.Saturday{
+    background-color: #7a3ae0;
+    color: white;
+}
+.Sunday{
+    background-color: rgb(240, 118, 48);
+    color: white;
+}
+.muted{
+    font-size: small;
+    color: #696969	;
+    margin-left: 10px;
+}
+
+
+
+@media only screen and (max-width: 700px) {
+
+
+    .title-week{
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .content-day{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+
+    .haeder-content-day h3{
+        width: 90%;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+
+
+    .title-week{
+        width: 40%;
+        margin: 20px auto;
+    }
+
+    .content-day{
+        width: 90%;
+        margin: 10px auto;
+    }
+
+
+    .haeder-content-day h3{
+        width: 90%;
+    }
+
+    
+}
