@@ -24,7 +24,7 @@ if (isset($_POST['title']) && isset($_POST['content']) && isset($_FILES['photo']
             $succes = "khedma N9ia (y)";
 
             $path = $_FILES['photo']['tmp_name'];
-            $destination = '../../public/img/' . $_FILES['photo']['name'];
+            $destination = '../../img/' . $_FILES['photo']['name'];
 
             move_uploaded_file($path, $destination);
         } else {

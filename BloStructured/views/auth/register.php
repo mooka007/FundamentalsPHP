@@ -13,7 +13,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])
         if (register($_POST['name'], $_POST['email'], $_POST['password']) == false) {
             $error = '<h1 class="text-center text-danger">Email All Ready Exist</h1>';
         } else {
-            header('location: ../blogs/home.php');
+            header('location: login.php');
         }
     } else {
         $error =  '<h1 class="text-center text-danger">field Missing </h1>';
@@ -29,7 +29,7 @@ if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['password'])
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.88.1">
-    <title>Signin Template · Bootstrap v5.1</title>
+    <title>Signin </title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
 

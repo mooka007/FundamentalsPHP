@@ -2,7 +2,7 @@
 include '../../controllers/userControl.php';
 // ila kan ch whd connecte o dar f url register 
 // ga3ma ghadi idih
-if (isset($_SESSION['email']) && !empty($_SESSION['email'])) { 
+if (isset($_SESSION['email']) && !empty($_SESSION['email'])) {
     header('location: ../blogs/home.php');
 }
 

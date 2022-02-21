@@ -6,6 +6,9 @@ $posts = getPosts() ?>
 
 
 <div class="container mt-5">
+    <!-- checking what the session contains -->
+    <!-- <php print_r($_SESSION); ?> -->
+    <!-- -->
     <div class="row">
         <?php foreach ($posts as $post) : ?>
 
