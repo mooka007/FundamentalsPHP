@@ -38,7 +38,7 @@ function getPosts()
 {
     global $pdo;
     if ($pdo) {
-        $query = 'SELECT title, content, photo,users.name as username, categories.name FROM posts
+        $query = 'SELECT posts.id,user_id, title, content, photo,users.name as username,  categories.name FROM posts
     INNER JOIN   users
     on posts.user_id=users.id
     INNER JOIN categories
@@ -47,6 +47,38 @@ function getPosts()
         $stat = $pdo->prepare($query);
 
         $stat->execute();
+        return $stat->fetchAll();
+    }
+}
+
+
+function delete($id)
+{
+    global $pdo;
+    if ($pdo) {
+        $query = 'DELETE from posts WHERE id=:id';
+        $stat = $pdo->prepare($query);
+        $stat->execute([
+            ':id' => $id
+        ]);
+    }
+}
+function search($word)
+{
+    global $pdo;
+    if ($pdo) {
+        $query = 'SELECT posts.id,user_id, title, content, photo,users.name as username,  categories.name FROM posts
+    INNER JOIN   users
+    on posts.user_id=users.id
+    INNER JOIN categories
+    on posts.category_id=categories.id
+    WHERE title like :title
+    ';
+        $stat = $pdo->prepare($query);
+
+        $stat->execute([
+            ':title' => "$word%"
+        ]);
         return $stat->fetchAll();
     }
 }
