@@ -1,0 +1,5 @@
+login & Register form and  error handling
+Hide login and register page when user is authenticated
+Display all categories from database inside dropdown select
+add new post using form and image validation and jquery animation
+secure pages with session and display all posts using card element
